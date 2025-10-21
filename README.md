@@ -2,6 +2,7 @@
 This is an Arduino/PlatformIO library for emulating the motor controller of the Kukirin G2 Pro e-scooter on an ESP32, specifically the Wemos D1 Mini model.
 The primary goal of this project is to fully reverse-engineer and replicate the UART communication protocol between the display and the controller. 
 This allows for the creation of custom controllers, monitoring tools, or "man-in-the-middle" applications for tuning.
+In the examples folder of the library is a complete code for a Spintend UBOX Alu lite VESC-Controller.
 ## Key Features
 - Full Protocol Emulation: Accurately replicates the entire communication, including the dynamic speed checksum, eliminating all communication errors (E-006).
 - Event-Driven: Use modern callback functions (onLightChange, onBrakeChange, etc.) to react to events instead of polling states in your main loop.
